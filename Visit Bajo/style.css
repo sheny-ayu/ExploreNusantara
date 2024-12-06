@@ -1,0 +1,23 @@
+:root {
+  --01: #193e5f;
+  --02: #4474a4;
+  --03: #9abce1;
+  --04: #c4d3e6;
+  --05: #ffffff;
+  --06: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--05);
+  color: #193e5f;
+}
