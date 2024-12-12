@@ -300,12 +300,12 @@ h3 {
 }
 
 .horizontal-scroll::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: #193e5f;
   border-radius: 4px;
 }
 
 .horizontal-scroll::-webkit-scrollbar-thumb:hover {
-  background: #888;
+  background: #f9f9f9;
 }
 
 
