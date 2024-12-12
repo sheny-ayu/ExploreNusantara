@@ -169,7 +169,7 @@ img {
 header {
   text-align: center;
   padding: 20px;
-  background-color: #007BFF;
+  background-color: #3b4a5a;
   color: white;
 }
 
@@ -181,7 +181,7 @@ h1 {
 h2 {
   margin: 20px 0;
   font-size: 1.5rem;
-  color: #007BFF;
+  color: #fcfcfd;
 }
 
 h3 {
@@ -195,7 +195,6 @@ h3 {
 /* Section styles */
 .place-section {
   padding: 20px;
-  background: white;
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -225,7 +224,7 @@ h3 {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #007BFF;
+  background-color: #3b4a5a;
   color: white;
   font-size: 0.9rem;
 }
@@ -254,7 +253,7 @@ footer {
 
 .card__data {
   width: 280px;
-  background-color: var(--container-color);
+  background-color: #fff;
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
   border-radius: 1rem;
