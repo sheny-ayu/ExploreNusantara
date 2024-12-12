@@ -37,8 +37,8 @@ body {
 }
 
 .navbar .logo img {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 }
 
 .navbar .navbar-nav a {
@@ -84,14 +84,14 @@ body {
 /* LAPTOP */
 @media (max-width: 1366px) {
   html {
-    font-size: 75%;
+    font-size: 100%;
   }
 }
 
 /* TABLET */
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: 60%;
   }
 
   #menu {
