@@ -250,7 +250,7 @@ img {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #193e5f;
   position: relative;
 }
 
@@ -269,14 +269,14 @@ h1 {
 h2 {
   margin: 20px 0;
   font-size: 1.5rem;
-  color: #fcfcfd;
+  color: #193e5f;
 }
 
 h3 {
   font-size: 2.7rem;
   padding-top: 70px;
   text-align: center;
-  color: #706f6f;
+  color: #193e5f;
   margin: -70px 0;
  }
 
@@ -308,14 +308,6 @@ h3 {
   background: #888;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #3b4a5a;
-  color: white;
-  font-size: 0.9rem;
-}
 
 .container {
   display: grid;
@@ -506,7 +498,7 @@ footer {
 /* Transparent button with hover effect */
 .load-more-button {
   display: inline-block;
-  background-color: transparent; /* Transparent background */
+  background-color: rgba(255, 255, 255, 0.783); /* Transparent background */
   color: var(--first-color); /* Use primary color for text */
   font-size: var(--small-font-size);
   font-weight: 500;
