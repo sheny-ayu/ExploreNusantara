@@ -13,3 +13,33 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
+
+// place
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.card-slider');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  const cards = document.querySelectorAll('.card__article');
+  const cardWidth = cards[0].offsetWidth + 20; // 20px for the gap
+
+  let currentIndex = 0;
+
+  function moveSlider() {
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
+
+  prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      moveSlider();
+    }
+  });
+
+  nextButton.addEventListener('click', () => {
+    if (currentIndex < cards.length - 1) {
+      currentIndex++;
+      moveSlider();
+    }
+  });
+});
+
