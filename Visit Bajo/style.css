@@ -351,17 +351,15 @@ h3 {
   position: relative;
   padding: 20px;
   background: white;
-  margin-bottom: relative;
-  margin-top: relative;
+  margin: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .scenery-section {
   position:relative;
-  margin-top: relative;
   padding: 20px;
   background: white;
-  margin-bottom: relative;
+  margin: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
