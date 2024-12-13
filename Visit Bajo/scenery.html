@@ -1,32 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Bajo</title>
 
-   <div class="container">
-      <div class="card__container">
+    <!-- FONTS POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FEATHER ICONS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION START -->
+    <nav class="navbar">
+      <a href="#" class="logo"><img src="Image/logo.png" /></a>
+      <div class="navbar-nav">
+        <a href="#">HOME</a>
+        <a href="#">EXPLORE</a>
+        <a href="#">CULTURE</a>
+        <a href="#">STAY</a>
+        <a href="more.html">PLACES</a>
+        <a href="#">TRANSPORTATION</a>
+        <a href="#">NEWS</a>
+        <a href="#">FOLLOW US</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- NAVBAR SECTION FINISH -->
+
+    <!-- FUNFACT SECTION START -->
+    <section>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="Image/slide1.png" alt="" />
+          <img id="slide-2" src="Image/slide2.png" alt="" />
+          <img id="slide-3" src="Image/slide3.png" alt="" />
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </section>
+
+   <section class="scenery-section" id="scenery">
+      <h2>Scenery</h2>
+      <div class="container">
+         <div class="card__container">
          <article class="card__article">
-            <img src="Image/pulaukalong.jpg" alt="image" class="card__img">
+            <img src="Image/beach.jpeg" alt="image" class="card__img">
+
             <div class="card__data">
-               <span class="card__description">Kalong Island</span>
-               <h2 class="card__title">Sunset and The Bat Attraction</h2>
+               <span class="card__description">Pink Beach</span>
+               <h2 class="card__title">One of Famous Beach</h2>
                <a href="#" class="card__button">Read More</a>
             </div>
          </article>
 
-         <article class="card__article">
-            <img src="Image/takamakassar.jpg" alt="image" class="card__img">
+        <article class="card__article">
+            <img src="Image/hopping.jpeg" alt="image" class="card__img">
+
             <div class="card__data">
-               <span class="card__description">Taka Makassar</span>
-               <h2 class="card__title">a Small White Sandbar Island </h2>
+               <span class="card__description">Hopping Island</span>
+               <h2 class="card__title">The Small Island</h2>
                <a href="#" class="card__button">Read More</a>
             </div>
          </article>
-    
-                    
-                
-                
-   </div>
-   </div>
+
+        <article class="card__article">
+            <img src="Image/cave.jpeg" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Batu Cermin Cave</span>
+               <h2 class="card__title">Unique Rock Formation</h2>
+               <a href="#" class="card__button">Read More</a>
+            </div>
+        </article>
+
+        <article class="card__article">
+         <img src="Image/pulaukalong.jpg" alt="image" class="card__img">
+         <div class="card__data">
+            <span class="card__description">Kalong Island</span>
+            <h2 class="card__title">Sunset and The Bat Attraction</h2>
+            <a href="#" class="card__button">Read More</a>
+         </div>
+      </article>
+
+      <article class="card__article">
+         <img src="Image/takamakassar.jpg" alt="image" class="card__img">
+         <div class="card__data">
+            <span class="card__description">Taka Makassar</span>
+            <h2 class="card__title">a Small White Sandbar Island </h2>
+            <a href="#" class="card__button">Read More</a>
+         </div>
+      </article>
+      </div>
+      </div>
+   </section>
+   
+   <footer>
+      <div class="row">
+        <div class="col">
+          <img src="Image/Logo.png" class="logo" />
+          <p>
+            Thank you for visiting our Explore Nusantara website! We truly appreciate
+            your time and attention. We hope the information we provide helps
+            you plan an unforgettable journey. Enjoy exploring the beauty of
+            Labuan Bajo!.
+          </p>
+        </div>
+        <div class="col">
+          <h3>
+            Office
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Sumatera</p>
+          <p>Komodo District, West Manggarai Regency</p>
+          <p>East Nusa Tenggara, Indonesia</p>
+          <p class="email-id">explorenusantara@gmail.com</p>
+          <h4>+62 - 0099866242</h4>
+        </div>
+        <div class="col">
+          <h3>
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>
+            Newsletter
+            <div class="underline"><span></span></div>
+          </h3>
+          <form>
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="Enter your email id" required>
+            <button type="submit">
+              <i data-feather="arrow-right-circle"></i>
+            </button>
+          </form>
+          <div class="social-icons">
+            <i data-feather="facebook"></i>
+            <i data-feather="instagram"></i>
+            <i data-feather="activity"></i>
+            <i data-feather="map-pin"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Visit Bajo - All Rights Reserved</p>
+    </footer>
+    <!-- CONTACT SECTION FINISH -->
+
+    <!-- FEATHER ICONS -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 </html>
