@@ -370,7 +370,7 @@ h3 {
 }
 
 .horizontal-scroll::-webkit-scrollbar-thumb:hover {
-  background: #f9f9f9;
+  background: #c6ccf5;
 }
 
 .container {
@@ -397,7 +397,7 @@ h3 {
 
 .card__data {
   width: 280px;
-  background-color: #fff;
+  background-color: #d9dbf8;
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
   border-radius: 1rem;
@@ -561,7 +561,7 @@ h3 {
 /* Transparent button with hover effect */
 .load-more-button {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.783); /* Transparent background */
+  background-color: #d9dbf8; /* Transparent background */
   color: var(--first-color); /* Use primary color for text */
   font-size: var(--small-font-size);
   font-weight: 500;
