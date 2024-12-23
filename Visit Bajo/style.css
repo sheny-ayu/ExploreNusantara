@@ -718,8 +718,8 @@ form button .fa-solid {
 }
 
 .social-icons .fa-brands {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   text-align: center;
   line-height: 40px;
@@ -792,4 +792,7 @@ hr {
   }
 }
 
+h3.footer-h3 {
+  font-size: 30px;
+}
 /* FOOTER SECTION */
