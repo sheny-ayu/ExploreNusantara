@@ -625,7 +625,7 @@ a {
 /* news finish */
 
 /* FOOTER SECTION */
-footer {
+footer{
   width: 100%;
   bottom: 0;
   background: linear-gradient(to right, #00093c, #2d0b00);
@@ -636,7 +636,7 @@ footer {
   line-height: 20px;
 }
 
-.row {
+.row{
   width: 85%;
   margin: auto;
   display: flex;
@@ -645,45 +645,43 @@ footer {
   justify-content: space-between;
 }
 
-.col {
+.col{
   flex-basis: 25%;
   padding: 10px;
 }
 
-.col:nth-child(2),
-.col:nth-child(3) {
+.col:nth-child(2), .col:nth-child(3){
   flex-basis: 15%;
 }
 
-.logo {
-  width: 100px;
-  height: 100px;
+.logo{
+  width: 80px;
   margin-bottom: 30px;
 }
 
-.col h3 {
+.col h3{
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
 }
 
-.email-id {
+.email-id{
   width: fit-content;
   border-bottom: 1px solid #ccc;
   margin: 20px 0;
 }
 
-ul li {
+ul li{
   list-style: none;
   margin-bottom: 12px;
 }
 
-ul li a {
+ul li a{
   text-decoration: none;
   color: #fff;
 }
 
-form {
+form{
   padding-bottom: 15px;
   display: flex;
   align-items: center;
@@ -692,12 +690,12 @@ form {
   margin-bottom: 50px;
 }
 
-form .far {
+form .far{
   font-size: 18px;
   margin-right: 10px;
 }
 
-form input {
+form input{
   width: 100%;
   background: transparent;
   color: #ccc;
@@ -705,19 +703,19 @@ form input {
   outline: none;
 }
 
-form button {
+form button{
   background: transparent;
   border: 0;
   outline: none;
   cursor: pointer;
 }
 
-form button .fa-solid {
+form button .fa-solid{
   font-size: 16px;
-  color: #ffffff;
+  color: #ccc;
 }
 
-.social-icons .fa-brands {
+.social-icons .fa-brands{
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -730,18 +728,18 @@ form button .fa-solid {
   cursor: pointer;
 }
 
-hr {
+hr{
   width: 90%;
   border: 0;
   border-bottom: 1px solid #ccc;
   margin: 20px auto;
 }
 
-.copyright {
+.copyright{
   text-align: center;
 }
 
-.underline {
+.underline{
   width: 100%;
   height: 5px;
   background: #767676;
@@ -752,7 +750,7 @@ hr {
   overflow: hidden;
 }
 
-.underline span {
+.underline span{
   width: 15px;
   height: 100%;
   background: #fff;
@@ -763,24 +761,23 @@ hr {
   animation: moving 2s linear infinite;
 }
 
-@keyframes moving {
-  0% {
+@keyframes moving{
+  0%{
     left: -20px;
   }
-  100% {
+  100%{
     left: 100%;
   }
 }
 
-@media (max-width: 700px) {
-  footer {
+@media (max-width: 700px){
+  footer{
     bottom: unset;
   }
-  .col {
+  .col{
     flex-basis: 100%;
   }
-  .col:nth-child(2),
-  .col:nth-child(3) {
+  .col:nth-child(2), .col:nth-child(3){
     flex-basis: 100%;
   }
   .card-wrapper {
@@ -790,9 +787,5 @@ hr {
   .card-wrapper .swiper-slide-button {
     display: none;
   }
-}
-
-h3.footer-h3 {
-  font-size: 30px;
 }
 /* FOOTER SECTION */
