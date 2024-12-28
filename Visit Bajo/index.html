@@ -57,11 +57,74 @@
     <!-- FUNFACT SECTION FINISH -->
 
     <!-- NOW INFO SECTION START -->
- 
+
     <!-- NOW INFO SECTION FINISH -->
 
     <!-- STAY SECTION START -->
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width-width, initial-scale=1.0">
+        <!-- Linking google fonts for icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+        <!-- linking swiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <div class="container swiper">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="images/resort labuan bajo.jpg" alt="card image" class="card-image">
+                <p class="badge resort labuan bajo"> RESORT </p>
+                <h2 class="card-title"> Here are some Resort in labuan bajo </h2>
+                <button class="card-button
+                material-symbols-rounded">arrow_forward</button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="images/hotel labuan bajo.jpeg" alt="card image" class="card-image">
+                <p class="badge hotel labuan bajo"> HOTEL </p>
+                <h2 class="card-title"> Here are some Hotel in labuan bajo </h2>
+                <button class="card-button
+                material-symbols-rounded">arrow_forward</button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="images/liveboard labuan bajo.jpeg" alt="card image" class="card-image">
+                <p class="badge liveboard labuan bajo"> LIVEBOARDS </p>
+                <h2 class="card-title"> Here are some Liveboards in labuan bajo </h2>
+                <button class="card-button
+                material-symbols-rounded">arrow_forward</button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img src="images/guesthouse labuan bajo.jpeg" alt="card image" class="card-image">
+                <p class="badge guesthouse labuan bajo"> GUESTHOUSE </p>
+                <h2 class="card-title"> Here are some Guesthouse in labuan bajo </h2>
+                <button class="card-button
+                material-symbols-rounded">arrow_forward</button>
+              </a>
+            </li>
+          </ul>
 
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+        </div>
+        <!-- linking swiperJS script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- linking custom script -->
+        <script src="script.js"></script>
+      </body>
+    </html>
     <!-- STAY SECTION FINISH -->
 
     <!-- PLACES SECTION START -->
@@ -219,14 +282,14 @@
         <div class="col">
           <img src="Image/Logo.png" class="logo" />
           <p>
-            Thank you for visiting our Explore Nusantara website! We truly appreciate
-            your time and attention. We hope the information we provide helps
-            you plan an unforgettable journey. Enjoy exploring the beauty of
-            Labuan Bajo!.
+            Thank you for visiting our Explore Nusantara website! We truly
+            appreciate your time and attention. We hope the information we
+            provide helps you plan an unforgettable journey. Enjoy exploring the
+            beauty of Labuan Bajo!.
           </p>
         </div>
         <div class="col">
-          <h3>
+          <h3 class="footer-h3">
             Office
             <div class="underline"><span></span></div>
           </h3>
@@ -237,40 +300,67 @@
           <h4>+62 - 0099866242</h4>
         </div>
         <div class="col">
-          <h3>
+          <h3 class="footer-h3">
             Links
             <div class="underline"><span></span></div>
           </h3>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Contacts</a></li>
+            <li><a href="#" id="top-scroll">Home</a></li>
+            <li><a href="">Explore</a></li>
+            <li><a href="">Culture</a></li>
+            <li><a href="">Stay</a></li>
+            <li><a href="">Places</a></li>
+            <li><a href="">Transportation</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Follow Us</a></li>
           </ul>
         </div>
         <div class="col">
-          <h3>
+          <h3 class="footer-h3">
             Newsletter
             <div class="underline"><span></span></div>
           </h3>
           <form>
             <i data-feather="mail"></i>
-            <input type="email" placeholder="Enter your email id" required>
+            <input type="email" placeholder="Enter your email id" required />
             <button type="submit">
               <i data-feather="arrow-right-circle"></i>
             </button>
           </form>
-          <div class="social-icons">
-            <i data-feather="facebook"></i>
-            <i data-feather="instagram"></i>
-            <i data-feather="activity"></i>
-            <i data-feather="map-pin"></i>
+          <div class="social-icons" style="text-decoration: none; color: #333">
+            <a
+              href="https://www.facebook.com/pesona.indonesia"
+              target="_blank"
+              title="facebook"
+            >
+              <i data-feather="facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/pesona.indonesia/profilecard/?igsh=ZnRsMXE5NWNzamsx"
+              target="_blank"
+              title="instagram"
+            >
+              <i data-feather="instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=t6NHGdoHgNE"
+              target="_blank"
+              title="youtube"
+            >
+              <i data-feather="play-circle"></i>
+            </a>
+            <a
+              href="https://www.google.com/maps/place/Labuan+Bajo/@-6.6871923,106.6363407,74998m/data=!3m1!1e3!4m10!1m2!2m1!1sbajo!3m6!1s0x2e69b72cb7bbefbd:0xde1feadfa61fdfe4!8m2!3d-6.6871923!4d106.9412113!15sCgRiYWpvWgYiBGJham-SARFidWZmZXRfcmVzdGF1cmFudOABAA!16s%2Fg%2F11s753qpsx?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              title="maps"
+            >
+              <i data-feather="map-pin"></i>
+            </a>
           </div>
         </div>
       </div>
       <hr />
-      <p class="copyright">Visit Bajo - All Rights Reserved</p>
+      <p class="copyright">&copy; 2024 Visit Bajo. All Rights Reserved</p>
     </footer>
     <!-- CONTACT SECTION FINISH -->
 

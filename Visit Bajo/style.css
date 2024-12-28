@@ -81,53 +81,53 @@ body {
 
 /* FF SECTION REAL */
 .slider-wrapper {
-	position: relative;
-	margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
 }
 
 .slider {
-	display: flex;
-	height: 100%;
+  display: flex;
+  height: 100%;
   width: 100%;
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
-	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-	scrollbar-width: none; /* Hide scrollbar Firefox */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .slider::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 .slider img {
-	flex: 1 0 100%;
-	scroll-snap-align: start;
-	object-fit: cover;
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
 }
 
 .slider-nav {
-	display: flex;
-	column-gap: 1rem;
-	position: relative;
-	bottom: 1.25rem;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
+  display: flex;
+  column-gap: 1rem;
+  position: relative;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .slider-nav a {
-	width: 0.5rem;
-	height: 0.5rem;
-	border-radius: 50%;
-	background-color: #fff;
-	opacity: 0.75;
-	transition: opacity ease 250ms;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
 }
 
 .slider-nav a:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .slider::after {
@@ -289,6 +289,138 @@ body {
   }
 }
 
+/* stay section start */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0 ,0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #5372f0;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: #5372f0;
+  padding: 8px 16px;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #dde4ff;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.resortlabuanbajo {
+  color: #000;
+  background: #f9f9f9;
+}
+
+.card-list .card-link .badge.hotellabuanbajo {
+  color: #000;
+  background: #f9f9f9;
+}
+
+.card-list .card-link .badge.liveboardlabuanbajo {
+  color: #000;
+  background: #f9f9f9;
+}
+
+.card-list .card-link .badge.guesthouselabuanbajo {
+  color: #000;
+  background: #f9f9f9;
+}
+
+
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #5372f0;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372f0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #5372f0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #5372f0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+  color:  #5372f0;
+  margin: -35px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin-top: 0-10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+/* stay section finish*/
+
 /* place section start */
 
 /*========== Responsive typography ==========*/
@@ -356,7 +488,7 @@ h3 {
 }
 
 .scenery-section {
-  position:relative;
+  position: relative;
   padding: 20px;
   background: white;
   margin: 0;
@@ -796,8 +928,8 @@ form button .fa-solid {
 }
 
 .social-icons .fa-brands {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   text-align: center;
   line-height: 40px;
@@ -868,6 +1000,10 @@ hr {
   .card-wrapper .swiper-slide-button {
     display: none;
   }
+}
+
+h3.footer-h3 {
+  font-size: 30px;
 }
 
 /* FOOTER SECTION */
