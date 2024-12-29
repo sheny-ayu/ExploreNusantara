@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Bajo</title>
+
+    <!-- FONTS POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FEATHER ICONS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION START -->
+    <nav class="navbar">
+      <a href="#" class="logo"><img src="media/logo.png" /></a>
+      <div class="navbar-text">
+        <a href="#">HOME</a>
+        <a href="explore.html">EXPLORE</a>
+        <a href="culture.html">CULTURE</a>
+        <a href="stay.html">STAY</a>
+        <a href="places.html">PLACES</a>
+        <a href="transportation.html">TRANSPORTATION</a>
+        <a href="news.html">NEWS</a>
+        <a href="contact.html">FOLLOW US</a>
+      </div>
+    </nav>
+    <!-- NAVBAR SECTION FINISH -->
+
+    <!-- FUNFACT SECTION START -->
+    <section>
+      <div class="slider-home">
+        <div class="slider">
+          <video
+            class="slide-v"
+            src="media/slide video.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <img id="slide-3" src="media/slide1.png" alt="" />
+          <img id="slide-2" src="media/slide2.png" alt="" />
+          <img id="slide-3" src="media/slide3.png" alt="" />
+        </div>
+        <div class="slider-link">
+          <a href="#slide-v"></a>
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </section>
+    <!-- FUNFACT SECTION FINISH -->
+
+    <!-- NOW INFO SECTION START -->
+    <style>
+      .now-info {
+        top: 110%;
+        position: absolute;
+        padding: 1rem 20%;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+
+    <div class="now-info">
+      <a id="description">Loading...</a>
+      <a id="temperature">Loading...</a>
+      <a id="date">Loading...</a>
+      <a id="time">Loading...</a>
+    </div>
+
+    <script>
+      function updateTime() {
+        const options = {
+          timeZone: "Asia/Makassar",
+          hour12: true,
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        };
+        const now = new Date().toLocaleTimeString("en-US", options);
+
+        // Split the time into hours, minutes, seconds, and AM/PM
+        const [time, period] = now.split(" ");
+        const [hours, minutes, seconds] = time.split(":");
+
+        // Update the text content with <span> elements for hour and AM/PM
+        document.getElementById("time").innerHTML = `
+          ${hours}:${minutes}:${seconds} ${period}
+        `;
+      }
+
+      updateTime();
+      setInterval(updateTime, 1000);
+
+      function updateDate() {
+        const options = {
+          timeZone: "Asia/Makassar",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        const today = new Date().toLocaleDateString("en-GB", options);
+
+        document.getElementById("date").textContent = `${today}`;
+      }
+
+      // Update the date on page load
+      updateDate();
+
+      // Update the date every day (optional interval for long-running pages)
+      setInterval(updateDate, 24 * 60 * 60 * 1000);
+
+      // Static weather data that updates daily
+      const weatherUpdates = [
+        { description: "Sunny", temperature: 30 },
+        { description: "Partly Cloudy", temperature: 28 },
+        { description: "Rainy", temperature: 25 },
+        { description: "Thunderstorm", temperature: 24 },
+        { description: "Overcast", temperature: 27 },
+      ];
+
+      function updateWeather() {
+        const date = new Date();
+        const index = date.getDate() % weatherUpdates.length;
+        const todayWeather = weatherUpdates[index];
+
+        document.getElementById(
+          "description"
+        ).textContent = `${todayWeather.description}`;
+        document.getElementById(
+          "temperature"
+        ).textContent = `${todayWeather.temperature}°C`;
+      }
+
+      // Update the weather data daily
+      updateWeather();
+
+      // Optionally, ensure the data refreshes every 24 hours
+      setInterval(updateWeather, 24 * 60 * 60 * 1000);
+    </script>
+    <!-- NOW INFO SECTION FINISH -->
+    <div class="tittle-explore">
+      <img src="media/texplore.png" alt="" />
+    </div>
+    <!-- EXPLORE SECTION START -->
+    <div class="explore-maps">
+      <img src="media/explore.png" alt="" />
+    </div>
+    <!-- EXPLORE SECTION FINISH -->
+    <div class="tittle-culture">
+      <img src="media/tculture.png" alt="" />
+    </div>
+    <!-- CULTURE SECTION START -->
+    <div class="culture">
+      <figure>
+        <img src="media/rumusmoso.png" alt="" />
+        <figcaption>
+          Rumusmoso Tradition: The Unique Custom of Land Allocation
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="media/sea nomand.png" alt="" />
+        <figcaption>Sea Nomads: Life on Boats</figcaption>
+      </figure>
+      <figure>
+        <img src="media/kepok.png" alt="" />
+        <figcaption>Kepok Tradition: Welcoming Guests</figcaption>
+      </figure>
+    </div>
+    <!-- CULTURE SECTION FINISH -->
+    <div class="tittle-stay">
+      <img src="media/tstay.png" alt="" />
+    </div>
+    <!-- STAY SECTION START -->
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="wrapper">
+          <img src="media/hotel.png" alt="" />
+          <h1>HOTELS</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor sit amet.
+          </p>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn fill">Find More</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="wrapper">
+          <img src="media/liveboard.png" alt="" />
+          <h1>LIVEBOARDS</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor sit amet.
+          </p>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn fill">Find More</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="wrapper">
+          <img src="media/resort.png" alt="" />
+          <h1>RESORTS</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor sit amet.
+          </p>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn fill">Find More</button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="wrapper">
+          <img src="media/villa.png" alt="" />
+          <h1>VILLAS</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor sit amet.
+          </p>
+        </div>
+        <div class="button-wrapper">
+          <button class="btn fill">Find More</button>
+        </div>
+      </div>
+    </div>
+    <!-- STAY SECTION FINISH -->
+    <div class="tittle-places">
+      <img src="media/tplaces.png" alt="" />
+    </div>
+    <!-- PLACES SECTION START -->
+    <section>
+      <div class="places">
+        <div class="card__container">
+          <article class="card__article">
+            <img src="media/komodo.png" alt="Taka Makassar" class="card__img" />
+            <div class="card__data">
+              <span class="card__description">Komodo Island</span>
+              <h2 class="card__title">A Wonderful Ancient Park</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="media/fishing.png" alt="Padar Island" class="card__img" />
+            <div class="card__data">
+              <span class="card__description">Labuan Bajo</span>
+              <h2 class="card__title">Fishing Experience</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="media/padar island.png"
+              alt="Padar Island"
+              class="card__img"
+            />
+            <div class="card__data">
+              <span class="card__description">Padar Island</span>
+              <h2 class="card__title">Best Trekking</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="media/manta point.png"
+              alt="Manta Point"
+              class="card__img"
+            />
+            <div class="card__data">
+              <span class="card__description">Manta Point</span>
+              <h2 class="card__title">Best for Diving</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="media/batu cermin.png"
+              alt="Batu Cermin Cave"
+              class="card__img"
+            />
+            <div class="card__data">
+              <span class="card__description">Batu Cermin Cave</span>
+              <h2 class="card__title">Unique Rock Formation</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img
+              src="media/pink beach.png"
+              alt="Pink Beach"
+              class="card__img"
+            />
+            <div class="card__data">
+              <span class="card__description">Pink Beach</span>
+              <h2 class="card__title">One of Famous Beach</h2>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- "More Places" Button -->
+        <div class="button-container">
+          <a href="more.html" class="load-more-button">More Places</a>
+        </div>
+      </div>
+    </section>
+    <!-- PLACES SECTION FINISH -->
+    <div class="tittle-transportation">
+      <img src="media/ttransportation.png" alt="" />
+    </div>
+    <!-- TRANSPORTATION SECTION START -->
+    <div class="transportation">
+      <div class="first hero">
+        <img class="hero-profile-img" src="media/citilink.png" alt="Citilink" />
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+          <img src="media/logo citilink.png" alt="Citilink Logo" />
+        </div>
+        <div class="hero-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="hero-date">
+          <p>CITILINK</p>
+        </div>
+        <div class="hero-btn">
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+
+      <div class="second hero">
+        <img class="hero-profile-img" src="media/air asia.png" alt="Air Asia" />
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+          <img src="media/logo air asia.png" alt="Air Asia Logo" />
+        </div>
+        <div class="hero-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="hero-date">
+          <p>AIR ASIA</p>
+        </div>
+        <div class="hero-btn">
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+
+      <div class="third hero">
+        <img
+          class="hero-profile-img"
+          src="media/batik air.png"
+          alt="Batik Air"
+        />
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+          <img src="media/logo batik air.png" alt="Batik Air Logo" />
+        </div>
+        <div class="hero-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="hero-date">
+          <p>BATIK AIR</p>
+        </div>
+        <div class="hero-btn">
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- TRANSPORTATION SECTION FINISH -->
+    <div class="tittle-news">
+      <img src="media/tnews.png" alt="" />
+    </div>
+    <!-- NEWS SECTION START -->
+     <div class="news">
+       <div class="article-card">
+         <div class="content">
+          <a href="https://edition.cnn.com/travel/article/indonesia-labuan-bajo-flores-komodo/index.html">
+          <p class="date">7 Maret 2021</p>
+         <p class="title">Exploring the beauty of Indonesia’s dragon archipelago</p>
+          </div>
+          <img src="https://pict.sindonews.net/webp/1280/salsabila/photo/2024/12/03/5/62825/G-eksplorasi-pulau-komodo-menyaksikan-komodo-di-taman-nasional-loh-liang-vtr.webp"/>
+         </div>
+    
+        <div class="article-card">
+          <div class="content">
+      <a href="https://www.liputan6.com/news/read/5720846/labuan-bajo-surga-tersembunyi-indonesia-yang-bikin-takjub-para-pemimpin-asean">
+      <p class="date">02 October 2024</p>
+      <p class="title">Surga tersembunyi Indonesia yang membuat takjub para pemimpin ASEAN</p>
+    </div>
+    <img src="https://cdn1-production-images-kly.akamaized.net/XEsB8cbMB3tI88z1ceNq7qWLdlk=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4422974/original/065200500_1683748114-WhatsApp_Image_2023-05-10_at_21.06.53.jpeg"/>
+  </div>
+  
+  
+  <div class="article-card">
+    <div class="content">
+      <a href="https://photo.sindonews.com/view/62825/menelusuri-jejak-komodo-di-taman-nasional-loh-liang">
+      <p class="date">03 Desember 2024</p>
+      <p class="title">Menelusuri Jejak Komodo di Taman Nasional Loh Liang</p>
+    </div>
+    <img src="https://media.cnn.com/api/v1/images/stellar/prod/201210115529-02-indonesia-labuan-bajo-restricted.jpg?q=w_1110,c_fill/f_webp"/>
+  </div>
+</div>
+    <!-- NEWS SECTION FINISH -->
+
+    <!-- FOOTER SECTION START -->
+
+    <!-- FOOTER SECTION FINISH -->
+
+    <!-- FEATHER ICONS -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
